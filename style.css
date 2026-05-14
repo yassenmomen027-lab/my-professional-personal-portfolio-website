@@ -1,52 +1,80 @@
 body {
     margin: 0;
     font-family: Arial;
-    background: #0f172a;
+    background: #0b1220;
     color: white;
-    text-align: center;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+
+    /* 🔥 يخلي الموقع بعرض لابتوب */
+    display: flex;
+    justify-content: center;
 }
 
-/* خلفية متحركة */
-.bg {
+/* 🔥 كونتينر لعرض ثابت */
+.container {
+    width: 1200px;
+}
+
+/* خلفية متحركة نيون */
+body::before {
+    content: "";
     position: fixed;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle, #1e3a8a, #0f172a);
-    animation: move 8s infinite alternate;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, #1e3a8a, #0f172a, #000);
+    animation: move 12s infinite linear;
     z-index: -1;
 }
 
 @keyframes move {
-    from {filter: hue-rotate(0deg);}
-    to {filter: hue-rotate(70deg);}
+    0% {transform: translate(0,0);}
+    50% {transform: translate(-10%, -10%);}
+    100% {transform: translate(0,0);}
 }
 
-/* شريط علوي */
-.topbar {
-    background: #111827;
+/* Navbar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
     padding: 10px;
-    font-size: 14px;
-    color: #38bdf8;
+    text-align: center;
+    z-index: 999;
 }
 
-/* صورة */
-.profile {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    border: 3px solid #38bdf8;
-    margin-top: 20px;
+/* الهيدر */
+.hero {
+    padding: 120px 20px 60px;
+    text-align: center;
 }
 
-/* زر */
+/* كروت زجاجية */
+.card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 20px;
+    width: 220px;
+    border-radius: 15px;
+    transition: 0.4s;
+    backdrop-filter: blur(10px);
+}
+
+.card:hover {
+    transform: scale(1.08) translateY(-8px);
+    box-shadow: 0 0 20px #38bdf8;
+}
+
+/* أزرار */
 .btn {
     display: inline-block;
     margin: 10px;
     padding: 12px 20px;
-    background: #38bdf8;
-    color: black;
     border-radius: 10px;
+    background: linear-gradient(45deg,#38bdf8,#6366f1);
+    color: white;
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
@@ -56,21 +84,7 @@ body {
     transform: scale(1.1);
 }
 
-.whatsapp {
-    background: #25D366;
-    color: white;
-}
-
-/* أقسام */
-section {
-    padding: 60px 20px;
-}
-
-h2 {
-    color: #38bdf8;
-}
-
-/* كروت */
+/* Grid */
 .grid {
     display: flex;
     justify-content: center;
@@ -78,95 +92,38 @@ h2 {
     gap: 15px;
 }
 
-.card {
-    background: rgba(30,41,59,0.9);
-    padding: 20px;
-    width: 200px;
-    border-radius: 12px;
-    transition: 0.3s;
+/* واتساب عائم */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    padding: 15px;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 0 15px #25D366;
+    z-index: 999;
 }
 
-.card:hover {
-    transform: translateY(-10px) scale(1.05);
-    background: #334155;
+/* أنيميشن دخول */
+.fade {
+    animation: fade 1s ease;
 }
 
-/* أنيميشن */
-.fade-in {
-    animation: fadeIn 1s ease;
-}
-
-.fade-up {
-    animation: fadeUp 1s ease;
-}
-
-.slide-up {
-    animation: slideUp 1s ease;
-}
-
-.bounce {
-    animation: bounce 2s infinite;
-}
-
-.zoom-in {
-    animation: zoom 1s ease;
-}
-
-.glow {
-    text-shadow: 0 0 10px #38bdf8;
-}
-
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-@keyframes fadeUp {
-    from {transform: translateY(40px); opacity: 0;}
-    to {transform: translateY(0); opacity: 1;}
-}
-
-@keyframes slideUp {
-    from {transform: translateY(30px); opacity: 0;}
-    to {transform: translateY(0); opacity: 1;}
-}
-
-@keyframes bounce {
-    0%,100% {transform: translateY(0);}
-    50% {transform: translateY(-10px);}
-}
-
-@keyframes zoom {
-    from {transform: scale(0);}
-    to {transform: scale(1);}
-}
-.typing {
-    animation: typing 2s ease;
-}
-
-.slide {
-    animation: slideUp 1s ease;
-}
-
-.pop {
-    animation: pop 0.8s ease;
-}
-
-@keyframes typing {
-    from {opacity: 0; transform: translateX(50px);}
-    to {opacity: 1; transform: translateX(0);}
-}
-
-@keyframes slideUp {
-    from {opacity: 0; transform: translateY(40px);}
+@keyframes fade {
+    from {opacity: 0; transform: translateY(20px);}
     to {opacity: 1; transform: translateY(0);}
 }
 
-@keyframes pop {
-    from {transform: scale(0);}
-    to {transform: scale(1);}
-}
+/* 📱 موبايل: نخليه متجاوب (مهم جدًا) */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
 
-.card:hover {
-    transform: translateY(-10px) scale(1.05);
-} 
+    body {
+        display: block;
+    }
+}
