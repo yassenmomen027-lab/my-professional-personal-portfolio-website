@@ -1,2 +1,34 @@
-# my-professional-personal-portfolio-website
-Professional personal portfolio website showcasing projects, skills, and contact information.
+# 👨‍💻 بشمهندس مومن ياسين - Web Studio
+
+هذا مشروع موقع شخصي احترافي تم تصميمه باستخدام HTML و CSS.
+
+---
+
+## 🌐 محتوى الموقع:
+- الصفحة الرئيسية (Home)
+- صفحة الأعمال (Projects)
+- تصميم احترافي حديث
+- أنيميشن وتفاعلات
+
+---
+
+## 🚀 التقنيات المستخدمة:
+- HTML5
+- CSS3
+- Responsive Design
+
+---
+
+## 📁 المشروع:
+Portfolio Website - GitHub Pages
+
+---
+
+## 📞 تواصل:
+- WhatsApp: 01142419845
+- WhatsApp: 01012865842
+
+---
+
+## 💡 الهدف:
+عرض مهاراتي في تصميم وتطوير مواقع الويب بشكل احترافي.
