@@ -3,13 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Eng. Momen Yassen | Portfolio</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<title>Momen Yassen | Portfolio</title>
 
 <style>
 
-/* ===== RESET ===== */
+/* RESET */
 *{
     margin:0;
     padding:0;
@@ -18,140 +16,102 @@
 }
 
 body{
-    font-family:'Poppins',sans-serif;
+    font-family:Arial;
     background:linear-gradient(135deg,#0b1020,#111827,#020617);
     color:white;
+    padding-top:90px;
 }
 
 /* ===== TOP VERSE ===== */
 .top-verse{
-    width:100%;
-    text-align:center;
-    padding:12px 15px;
-    background:rgba(56,189,248,0.08);
-    border-bottom:1px solid rgba(255,255,255,0.1);
-    color:#38bdf8;
-    font-size:17px;
-    font-weight:500;
-    backdrop-filter:blur(10px);
     position:fixed;
     top:0;
-    z-index:2000;
-}
-
-/* ===== NAVBAR ===== */
-nav{
-    position:fixed;
-    top:45px;
+    left:0;
     width:100%;
-    background:rgba(0,0,0,0.6);
-    backdrop-filter:blur(10px);
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 40px;
-    z-index:1000;
+    text-align:center;
+    background:#0f172a;
+    color:#38bdf8;
+    padding:10px;
+    font-size:14px;
+    z-index:9999;
     border-bottom:1px solid rgba(255,255,255,0.1);
 }
 
-.logo{
-    font-weight:800;
-    color:#38bdf8;
-    font-size:20px;
-}
-
-nav ul{
+/* ===== NAV ===== */
+nav{
+    position:fixed;
+    top:42px;
+    left:0;
+    width:100%;
     display:flex;
-    list-style:none;
-    gap:25px;
+    justify-content:center;
+    gap:20px;
+    padding:10px;
+    background:rgba(0,0,0,0.7);
+    backdrop-filter:blur(10px);
+    z-index:9998;
 }
 
-nav ul li a{
-    text-decoration:none;
+nav a{
     color:white;
-    font-size:15px;
-    transition:0.3s;
+    text-decoration:none;
+    font-size:14px;
 }
 
-nav ul li a:hover{
+nav a:hover{
     color:#38bdf8;
 }
 
 /* ===== SECTIONS ===== */
 section{
-    padding:140px 40px;
     min-height:100vh;
+    padding:80px 20px;
     text-align:center;
 }
 
-/* ===== HERO ===== */
-.hero h1{
-    font-size:60px;
+/* TEXT */
+h1{
+    font-size:38px;
     margin-bottom:10px;
 }
 
-.hero h2{
+h2{
     color:#38bdf8;
-    margin-bottom:20px;
-}
-
-.hero p{
-    color:#cbd5e1;
-    margin-bottom:20px;
+    margin-bottom:10px;
 }
 
 /* BOX */
 .box{
     background:rgba(255,255,255,0.05);
-    padding:25px;
-    border-radius:15px;
-    margin-top:20px;
+    padding:18px;
+    border-radius:10px;
+    margin-top:15px;
     line-height:2;
+}
+
+/* CONTACT LINKS */
+.contact a{
+    display:block;
+    margin:10px 0;
+    color:#38bdf8;
+    text-decoration:none;
+    font-size:15px;
+}
+
+.contact a:hover{
+    color:white;
 }
 
 /* BUTTON */
 .btn{
     display:inline-block;
     margin-top:15px;
-    padding:12px 25px;
-    background:linear-gradient(135deg,#2563eb,#38bdf8);
-    color:white;
+    padding:10px 18px;
+    background:#38bdf8;
+    color:black;
     text-decoration:none;
-    border-radius:10px;
-    transition:0.3s;
-}
-
-.btn:hover{
-    transform:scale(1.05);
-}
-
-/* SECTIONS */
-#home{background:linear-gradient(135deg,#0b1020,#111827);}
-#services{background:#0f172a;}
-#work{background:#0b1220;}
-#contact{background:#0a0f1c;}
-
-/* MOBILE */
-@media(max-width:768px){
-
-nav{
-    flex-direction:column;
-    gap:10px;
-}
-
-nav ul{
-    flex-wrap:wrap;
-    justify-content:center;
-}
-
-.hero h1{
-    font-size:35px;
-}
-
-.top-verse{
-    font-size:14px;
-}
-
+    border-radius:8px;
+    font-weight:bold;
 }
 
 </style>
@@ -159,86 +119,86 @@ nav ul{
 
 <body>
 
-<!-- ===== VERSE ===== -->
+<!-- ===== QURAN VERSE ===== -->
 <div class="top-verse">
-    ﴿ وَقُلِ اعْمَلُوا فَسَيَرَى اللَّهُ عَمَلَكُمْ وَرَسُولُهُ وَالْمُؤْمِنُونَ ﴾
+﴿ وَقُلِ اعْمَلُوا فَسَيَرَى اللَّهُ عَمَلَكُمْ وَرَسُولُهُ وَالْمُؤْمِنُونَ ﴾
 </div>
 
-<!-- ===== NAVBAR ===== -->
+<!-- ===== NAV ===== -->
 <nav>
-    <div class="logo">Momen Yassen</div>
-    <ul>
-        <li><a href="#home">الرئيسية</a></li>
-        <li><a href="#work">الأعمال</a></li>
-        <li><a href="#services">الخدمات</a></li>
-        <li><a href="#contact">التواصل</a></li>
-    </ul>
+    <a href="#home">الرئيسية</a>
+    <a href="#work">الأعمال</a>
+    <a href="#services">الخدمات</a>
+    <a href="#contact">التواصل</a>
 </nav>
 
 <!-- ===== HOME ===== -->
-<section id="home" class="hero">
+<section id="home">
 
-    <h1>بشمهندس مؤمن ياسين</h1>
-    <h2>Eng. Momen Yassen</h2>
+<h1>بشمهندس مؤمن ياسين</h1>
+<h2>Eng. Momen Yassen</h2>
 
-    <p>مطور مواقع • مصمم واجهات • حلول رقمية احترافية</p>
+<p>مطور مواقع • UI/UX • حلول رقمية</p>
 
-    <div class="box">
-        🚀 نحول أفكارك إلى مواقع احترافية<br>
-        💡 تصميم عصري يناسب الشركات العالمية<br>
-        ⚡ سرعة وأداء عالي<br>
-        📈 نساعدك تنجح أونلاين
-    </div>
-
-    <a class="btn" href="#contact">ابدأ مشروعك</a>
+<div class="box">
+🚀 بنحوّل فكرتك لموقع احترافي<br>
+💡 تصميم عصري يناسب الشركات<br>
+⚡ سرعة وأداء عالي<br>
+📈 هدفنا نجاح مشروعك
+</div>
 
 </section>
 
 <!-- ===== WORK ===== -->
 <section id="work">
 
-    <h1>الأعمال</h1>
+<h1>الأعمال</h1>
 
-    <div class="box">
-        مشاريع حقيقية هتتحط هنا:<br>
-        - مواقع شركات<br>
-        - متاجر إلكترونية<br>
-        - أنظمة إدارة<br>
-        - صفحات هبوط احترافية
-    </div>
+<div class="box">
+مواقع شركات - متاجر إلكترونية - أنظمة إدارة - صفحات هبوط
+</div>
 
 </section>
 
 <!-- ===== SERVICES ===== -->
 <section id="services">
 
-    <h1>الخدمات</h1>
+<h1>الخدمات</h1>
 
-    <div class="box">
-        ✔ تصميم مواقع احترافية<br>
-        ✔ برمجة Frontend / Backend<br>
-        ✔ UI/UX Design<br>
-        ✔ تحسين سرعة المواقع<br>
-        ✔ ربط السوشيال ميديا
-    </div>
+<div class="box">
+✔ تصميم مواقع احترافية<br>
+✔ تطوير واجهات Frontend<br>
+✔ أنظمة إدارة<br>
+✔ تحسين أداء المواقع
+</div>
 
 </section>
 
 <!-- ===== CONTACT ===== -->
 <section id="contact">
 
-    <h1>التواصل</h1>
+<h1>التواصل</h1>
 
-    <div class="box">
-        📞 01142419845<br>
-        📞 01012865842<br>
-        📘 Facebook: Momen Yassen<br>
-        💬 WhatsApp متاح 24/7
-    </div>
+<div class="box contact">
 
-    <a class="btn" href="https://wa.me/201142419845">راسلنا الآن</a>
+<a href="https://www.facebook.com/share/1B1yjz84GL/" target="_blank">
+📘 فيسبوك
+</a>
+
+<a href="https://wa.me/201142419845" target="_blank">
+💬 واتساب
+</a>
+
+<a href="tel:01142419845">📞 01142419845</a>
+<a href="tel:01012865842">📞 01012865842</a>
+
+</div>
+
+<a class="btn" href="https://wa.me/201142419845">
+راسلنا الآن
+</a>
 
 </section>
 
 </body>
-    </html>
+</html>
