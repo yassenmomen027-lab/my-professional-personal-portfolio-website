@@ -1,50 +1,77 @@
-.hero {
-    animation: heroZoom 1.5s ease;
+/* ===== GLOBAL STYLE ===== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
 }
 
-.card {
-    animation: floatCard 3s infinite ease-in-out;
+body{
+    font-family:Arial, sans-serif;
+    background:#0b1020;
+    color:white;
+    min-height:100vh;
+    overflow-x:hidden;
+    background-attachment:fixed;
 }
 
-@keyframes heroZoom {
-    from {
-        opacity: 0;
-        transform: scale(0.8);
-    }
+/* ===== NAVBAR ===== */
 
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
+nav{
+    background:#111827;
+    padding:15px 40px;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+    box-shadow:0 0 20px rgba(0,0,0,0.5);
 }
 
-@keyframes floatCard {
-
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-10px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:18px;
+    transition:0.3s;
 }
 
-/* Glow Animation */
-.btn {
-    animation: glow 2s infinite alternate;
+nav a:hover{
+    color:#38bdf8;
 }
 
-@keyframes glow {
+/* ===== SECTIONS ===== */
 
-    from {
-        box-shadow: 0 0 10px #38bdf8;
-    }
+section{
+    padding:120px 10%;
+    background:transparent;
+}
 
-    to {
-        box-shadow: 0 0 25px #6366f1;
-    }
+/* ===== BUTTONS ===== */
+
+button,
+.btn{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover,
+.btn:hover{
+    background:#1d4ed8;
+    transform:scale(1.05);
+}
+
+/* ===== REMOVE WHATSAPP BUTTON ===== */
+
+.whatsapp,
+.whatsapp-btn,
+.whatsapp-button,
+.floating-whatsapp,
+#whatsapp{
+    display:none !important;
 }
