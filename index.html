@@ -15,46 +15,25 @@
     scroll-behavior:smooth;
 }
 
-body{<nav>
-  <a href="index.html">الرئيسية</a>
-  <a href="work.html">الأعمال</a>
-  <a href="services.html">الخدمات</a>
-  <a href="contact.html">التواصل</a>
-</nav>
+body{
     font-family:Arial;
     background:linear-gradient(135deg,#0b1020,#111827,#020617);
     color:white;
     padding-top:90px;
 }
 
-/* ===== TOP VERSE ===== */
-.top-verse{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    text-align:center;
-    background:#0f172a;
-    color:#38bdf8;
-    padding:10px;
-    font-size:14px;
-    z-index:9999;
-    border-bottom:1px solid rgba(255,255,255,0.1);
-}
-
 /* ===== NAV ===== */
 nav{
     position:fixed;
-    top:42px;
+    top:0;
     left:0;
     width:100%;
     display:flex;
     justify-content:center;
     gap:20px;
-    padding:10px;
-    background:rgba(0,0,0,0.7);
-    backdrop-filter:blur(10px);
-    z-index:9998;
+    padding:12px;
+    background:#0f172a;
+    z-index:9999;
 }
 
 nav a{
@@ -76,7 +55,7 @@ section{
 
 /* TEXT */
 h1{
-    font-size:38px;
+    font-size:36px;
     margin-bottom:10px;
 }
 
@@ -94,17 +73,10 @@ h2{
     line-height:2;
 }
 
-/* CONTACT LINKS */
-.contact a{
-    display:block;
-    margin:10px 0;
+/* QURAN BOX */
+.verse{
     color:#38bdf8;
-    text-decoration:none;
-    font-size:15px;
-}
-
-.contact a:hover{
-    color:white;
+    border:1px solid rgba(56,189,248,0.3);
 }
 
 /* BUTTON */
@@ -119,17 +91,24 @@ h2{
     font-weight:bold;
 }
 
+/* CONTACT LINKS */
+.contact a{
+    display:block;
+    margin:10px 0;
+    color:#38bdf8;
+    text-decoration:none;
+}
+
+.contact a:hover{
+    color:white;
+}
+
 </style>
 </head>
 
 <body>
 
-<!-- ===== QURAN VERSE ===== -->
-<div class="top-verse">
-﴿ وَقُلِ اعْمَلُوا فَسَيَرَى اللَّهُ عَمَلَكُمْ وَرَسُولُهُ وَالْمُؤْمِنُونَ ﴾
-</div>
-
-<!-- ===== NAV ===== -->
+<!-- NAV -->
 <nav>
     <a href="#home">الرئيسية</a>
     <a href="#work">الأعمال</a>
@@ -137,49 +116,56 @@ h2{
     <a href="#contact">التواصل</a>
 </nav>
 
-<!-- ===== HOME ===== -->
+<!-- HOME -->
 <section id="home">
+
+<!-- AYAH -->
+<div class="box verse">
+﴿ وَقُلِ اعْمَلُوا فَسَيَرَى اللَّهُ عَمَلَكُمْ وَرَسُولُهُ وَالْمُؤْمِنُونَ ﴾
+</div>
 
 <h1>بشمهندس مؤمن ياسين</h1>
 <h2>Eng. Momen Yassen</h2>
 
-<p>مطور مواقع • UI/UX • حلول رقمية</p>
-
 <div class="box">
-🚀 بنحوّل فكرتك لموقع احترافي<br>
-💡 تصميم عصري يناسب الشركات<br>
-⚡ سرعة وأداء عالي<br>
-📈 هدفنا نجاح مشروعك
+🚀 مطور مواقع احترافي<br>
+💡 تصميم مواقع حديثة<br>
+⚡ أداء سريع وتجربة مستخدم قوية
 </div>
+
+<a class="btn" href="#work">شوف أعمالنا</a>
 
 </section>
 
-<!-- ===== WORK ===== -->
+<!-- WORK -->
 <section id="work">
 
 <h1>الأعمال</h1>
 
 <div class="box">
-مواقع شركات - متاجر إلكترونية - أنظمة إدارة - صفحات هبوط
+🌐 مواقع شركات<br>
+🛒 متاجر إلكترونية<br>
+📊 أنظمة إدارة<br>
+🎓 منصات تعليمية
 </div>
 
 </section>
 
-<!-- ===== SERVICES ===== -->
+<!-- SERVICES -->
 <section id="services">
 
 <h1>الخدمات</h1>
 
 <div class="box">
 ✔ تصميم مواقع احترافية<br>
-✔ تطوير واجهات Frontend<br>
-✔ أنظمة إدارة<br>
-✔ تحسين أداء المواقع
+✔ تطوير Frontend<br>
+✔ تحسين الأداء<br>
+✔ UI/UX Design
 </div>
 
 </section>
 
-<!-- ===== CONTACT ===== -->
+<!-- CONTACT -->
 <section id="contact">
 
 <h1>التواصل</h1>
@@ -187,7 +173,11 @@ h2{
 <div class="box contact">
 
 <a href="https://www.facebook.com/share/1B1yjz84GL/" target="_blank">
-📘 فيسبوك
+📘 فيسبوك القديم
+</a>
+
+<a href="https://www.facebook.com/share/1aTqg5Z4pF/" target="_blank">
+📘 فيسبوك الجديد
 </a>
 
 <a href="https://wa.me/201142419845" target="_blank">
@@ -199,8 +189,8 @@ h2{
 
 </div>
 
-<a class="btn" href="https://wa.me/201142419845">
-راسلنا الآن
+<a class="btn" href="https://www.facebook.com/share/1aTqg5Z4pF/" target="_blank">
+تابعنا على فيسبوك
 </a>
 
 </section>
