@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الأعمال | Momen Yassen</title>
+
+<style>
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial;
+    background:linear-gradient(135deg,#0b1020,#111827,#020617);
+    color:white;
+    padding-top:90px;
+}
+
+/* NAV */
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:12px;
+    background:rgba(0,0,0,0.7);
+    backdrop-filter:blur(10px);
+    z-index:9999;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* TITLE */
+h1{
+    text-align:center;
+    font-size:40px;
+    margin-top:20px;
+    color:#38bdf8;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:30px;
+}
+
+/* CARD */
+.card{
+    background:rgba(255,255,255,0.05);
+    padding:20px;
+    border-radius:12px;
+    line-height:2;
+    transition:0.3s;
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    border-color:#38bdf8;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html">الرئيسية</a>
+  <a href="work.html">الأعمال</a>
+  <a href="services.html">الخدمات</a>
+  <a href="contact.html">التواصل</a>
+</nav>
+
+<!-- TITLE -->
+<h1>الأعمال</h1>
+
+<!-- PROJECTS -->
+<div class="grid">
+
+    <div class="card">
+        🌐 موقع شركة عقارات<br>
+        تصميم احترافي + نظام عرض عقارات
+    </div>
+
+    <div class="card">
+        🛒 متجر إلكتروني<br>
+        عرض منتجات + سلة شراء
+    </div>
+
+    <div class="card">
+        📊 لوحة تحكم<br>
+        إدارة بيانات المستخدمين
+    </div>
+
+    <div class="card">
+        🎓 منصة تعليمية<br>
+        دروس + اختبارات أونلاين
+    </div>
+
+</div>
+
+</body>
+</html>
