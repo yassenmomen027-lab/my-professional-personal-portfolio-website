@@ -3,63 +3,76 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>بشمهندس مومن ياسين | Web Studio</title>
+
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="animations.css">
 </head>
 
 <body>
 
-<div class="bg"></div>
+<div class="container">
 
-<!-- Navbar -->
-<nav>
-    <a href="#">الرئيسية</a>
-    <a href="projects.html">الأعمال</a>
-    <a href="#services">الخدمات</a>
-    <a href="#contact">تواصل</a>
+<!-- NAV -->
+<nav class="nav">
+    <h2 class="logo">MY STUDIO</h2>
+
+    <div class="links">
+        <a href="index.html">الرئيسية</a>
+        <a href="services.html">الخدمات</a>
+        <a href="projects.html">الأعمال</a>
+        <a href="contact.html">تواصل</a>
+    </div>
 </nav>
 
-<!-- Hero -->
+<!-- HERO -->
 <header class="hero">
 
     <div class="glass">
 
-        <h1>بشمهندس مومن ياسين</h1>
-        <p>Web Developer | UI/UX Designer | Freelancer</p>
+        <h1 class="title">بشمهندس مومن ياسين</h1>
 
-        <a class="btn" href="projects.html">📁 عرض الأعمال</a>
+        <p class="subtitle">
+            Web Developer • UI/UX Designer • Digital Solutions
+        </p>
+
+        <div class="actions">
+            <a class="btn" href="projects.html">📁 الأعمال</a>
+            <a class="btn ghost" href="services.html">⚡ الخدمات</a>
+        </div>
 
     </div>
 
 </header>
 
-<!-- Services -->
-<section id="services">
-    <h2>الخدمات</h2>
+<!-- QUICK INFO -->
+<section class="grid">
 
-    <div class="grid">
+    <div class="card">💼 مواقع شركات</div>
+    <div class="card">🛒 متاجر إلكترونية</div>
+    <div class="card">🚀 سرعة وأداء</div>
 
-        <div class="card">🌐 Web Apps</div>
-        <div class="card">🛒 E-Commerce</div>
-        <div class="card">⚡ Performance</div>
-        <div class="card">🎨 UI/UX</div>
-        <div class="card">🔒 Security</div>
-        <div class="card">🚀 SEO</div>
-
-    </div>
 </section>
 
-<!-- Contact -->
+<!-- CONTACT CTA -->
 <section id="contact">
-    <h2>تواصل معي</h2>
 
-    <a class="btn whatsapp" href="https://wa.me/201142419845">WhatsApp</a>
+    <h2>جاهز نبدأ مشروعك؟</h2>
+
+    <a class="btn whatsapp" href="https://wa.me/201142419845">
+        💬 واتساب مباشر
+    </a>
+
 </section>
 
 <footer>
     © 2026 - Momen Yassin Studio
 </footer>
 
+</div>
+
+<!-- WhatsApp Float -->
 <a class="wa-float" href="https://wa.me/201142419845">💬</a>
 
 </body>
