@@ -3,78 +3,85 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الخدمات | مؤمن ياسين</title>
 
-<title>الخدمات | بشمهندس مومن ياسين</title>
+<style>
 
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="animations.css">
+body{
+    margin:0;
+    font-family:Arial;
+    background:linear-gradient(135deg,#0b1020,#111827,#020617);
+    color:white;
+    text-align:center;
+    padding-top:100px;
+}
+
+/* NAV */
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#0f172a;
+    padding:12px;
+    z-index:999;
+}
+
+nav a{
+    color:white;
+    margin:10px;
+    text-decoration:none;
+    font-size:14px;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* TITLE */
+h1{
+    color:#38bdf8;
+    margin-top:20px;
+}
+
+/* BOX */
+.box{
+    margin:20px;
+    padding:20px;
+    background:rgba(255,255,255,0.05);
+    border-radius:12px;
+    line-height:2;
+    border:1px solid rgba(255,255,255,0.1);
+    transition:0.3s;
+}
+
+.box:hover{
+    transform:scale(1.02);
+    border-color:#38bdf8;
+}
+
+</style>
 </head>
 
-<body><nav>
-  <a href="index.html">الرئيسية</a>
-  <a href="work.html">الأعمال</a>
-  <a href="services.html">الخدمات</a>
-  <a href="contact.html">التواصل</a>
-</nav>
+<body>
+
+<!-- NAVIGATION (الربط بين الصفحات) -->
 <nav>
   <a href="index.html">الرئيسية</a>
   <a href="work.html">الأعمال</a>
   <a href="services.html">الخدمات</a>
   <a href="contact.html">التواصل</a>
 </nav>
-<div class="container">
 
-<!-- NAV -->
-<nav class="nav">
-    <h2 class="logo">MY STUDIO</h2>
+<!-- CONTENT -->
+<h1>الخدمات</h1>
 
-    <div class="links">
-        <a href="index.html">الرئيسية</a>
-        <a href="services.html">الخدمات</a>
-        <a href="projects.html">الأعمال</a>
-        <a href="contact.html">تواصل</a>
-    </div>
-</nav>
-
-<!-- HERO -->
-<header class="hero small">
-
-    <h1 class="title">⚡ خدماتي</h1>
-    <p class="subtitle">حلول رقمية احترافية تناسب الشركات والأفراد</p>
-
-</header>
-
-<!-- SERVICES GRID -->
-<section class="grid">
-
-    <div class="card">🌐 تصميم مواقع شركات</div>
-    <div class="card">🛒 إنشاء متاجر إلكترونية</div>
-    <div class="card">⚡ تحسين سرعة المواقع</div>
-    <div class="card">🎨 تصميم UI/UX احترافي</div>
-    <div class="card">🔒 حماية وتأمين المواقع</div>
-    <div class="card">🚀 تحسين SEO وظهور جوجل</div>
-
-</section>
-
-<!-- CTA -->
-<section class="cta">
-
-    <h2>جاهز تبدأ مشروعك؟</h2>
-
-    <a class="btn whatsapp" href="https://wa.me/201142419845">
-        💬 تواصل واتساب
-    </a>
-
-</section>
-
-<footer>
-    © 2026 - Momen Yassin Studio
-</footer>
-
+<div class="box">
+✔ تصميم مواقع احترافية<br>
+✔ تطوير واجهات Frontend<br>
+✔ إنشاء مواقع شركات<br>
+✔ تحسين سرعة وأداء المواقع<br>
+✔ تصميم UI/UX عصري
 </div>
-
-<!-- WhatsApp Float -->
-<a class="wa-float" href="https://wa.me/201142419845">💬</a>
 
 </body>
 </html>
