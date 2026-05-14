@@ -140,3 +140,33 @@ h2 {
     from {transform: scale(0);}
     to {transform: scale(1);}
 }
+.typing {
+    animation: typing 2s ease;
+}
+
+.slide {
+    animation: slideUp 1s ease;
+}
+
+.pop {
+    animation: pop 0.8s ease;
+}
+
+@keyframes typing {
+    from {opacity: 0; transform: translateX(50px);}
+    to {opacity: 1; transform: translateX(0);}
+}
+
+@keyframes slideUp {
+    from {opacity: 0; transform: translateY(40px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes pop {
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+} 
