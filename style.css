@@ -1,4 +1,6 @@
-/* ===== GLOBAL STYLE ===== */
+/* =========================
+   GLOBAL PROFESSIONAL STYLE
+========================= */
 
 *{
     margin:0;
@@ -8,31 +10,35 @@
 }
 
 body{
-    font-family:Arial, sans-serif;
-    background:#0b1020;
-    color:white;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg,#0b1020,#111827,#1e293b);
+    background-attachment: fixed;
+    color: white;
     min-height:100vh;
     overflow-x:hidden;
-    background-attachment:fixed;
 }
 
-/* ===== NAVBAR ===== */
+/* =========================
+   NAVBAR
+========================= */
 
 nav{
-    background:#111827;
-    padding:15px 40px;
-    position:fixed;
     width:100%;
+    position:fixed;
     top:0;
+    left:0;
     z-index:1000;
-    box-shadow:0 0 20px rgba(0,0,0,0.5);
+    padding:18px 40px;
+    background: rgba(15,23,42,0.85);
+    backdrop-filter: blur(10px);
+    box-shadow:0 4px 20px rgba(0,0,0,0.4);
 }
 
 nav a{
     color:white;
     text-decoration:none;
     margin:0 15px;
-    font-size:18px;
+    font-size:17px;
     transition:0.3s;
 }
 
@@ -40,33 +46,97 @@ nav a:hover{
     color:#38bdf8;
 }
 
-/* ===== SECTIONS ===== */
+/* =========================
+   SECTIONS
+========================= */
 
 section{
     padding:120px 10%;
-    background:transparent;
+    background:transparent !important;
 }
 
-/* ===== BUTTONS ===== */
+/* =========================
+   TITLES
+========================= */
+
+h1,h2,h3{
+    color:white;
+    font-weight:700;
+}
+
+p{
+    color:#d1d5db;
+    line-height:1.8;
+}
+
+/* =========================
+   BUTTONS
+========================= */
 
 button,
 .btn{
-    background:#2563eb;
+    background:linear-gradient(135deg,#2563eb,#38bdf8);
     color:white;
     border:none;
-    padding:12px 25px;
-    border-radius:10px;
+    padding:14px 28px;
+    border-radius:14px;
+    font-size:16px;
     cursor:pointer;
-    transition:0.3s;
+    transition:0.4s;
+    box-shadow:0 0 20px rgba(56,189,248,0.3);
 }
 
 button:hover,
 .btn:hover{
-    background:#1d4ed8;
-    transform:scale(1.05);
+    transform:translateY(-3px) scale(1.03);
+    box-shadow:0 0 30px rgba(56,189,248,0.5);
 }
 
-/* ===== REMOVE WHATSAPP BUTTON ===== */
+/* =========================
+   CARDS
+========================= */
+
+.card{
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:20px;
+    padding:25px;
+    backdrop-filter:blur(10px);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#cbd5e1;
+    background:transparent;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+a{
+    color:#38bdf8;
+    transition:0.3s;
+}
+
+a:hover{
+    color:white;
+}
+
+/* =========================
+   REMOVE WHATSAPP FLOATING BUTTON
+========================= */
 
 .whatsapp,
 .whatsapp-btn,
@@ -74,4 +144,38 @@ button:hover,
 .floating-whatsapp,
 #whatsapp{
     display:none !important;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    nav{
+        padding:15px 20px;
+    }
+
+    nav a{
+        display:inline-block;
+        margin:8px;
+        font-size:15px;
+    }
+
+    section{
+        padding:100px 7%;
+    }
+
+    h1{
+        font-size:34px;
+    }
+
+    h2{
+        font-size:28px;
+    }
+
+    p{
+        font-size:16px;
+    }
+
 }
